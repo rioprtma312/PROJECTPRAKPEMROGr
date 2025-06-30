@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tambah Film</title>
+</head>
+<body>
+    <h1>Tambah Film Baru</h1>
+    <form method="POST">
+        <label>Judul Film:</label><br>
+        <input type="text" name="judul_film" required><br>
+        <label>Sutradara:</label><br>
+        <input type="text" name="sutradara" required><br>
+        <label>Tahun Rilis:</label><br>
+        <input type="number" name="tahun_rilis" required><br>
+        <label>Genre:</label><br>
+        <input type="text" name="genre" required><br>
+        <button type="submit">Simpan</button>
+    </form>
+    <a href="{{ url_for('gui') }}">Kembali</a>
+</body>
+</html>

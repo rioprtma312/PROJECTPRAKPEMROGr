@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Film</title>
+</head>
+<body>
+    <h1>Edit Film</h1>
+    <form method="POST">
+        <label>Judul Film:</label><br>
+        <input type="text" name="judul_film" value="{{ row[1] }}" required><br>
+        <label>Sutradara:</label><br>
+        <input type="text" name="sutradara" value="{{ row[2] }}" required><br>
+        <label>Tahun Rilis:</label><br>
+        <input type="number" name="tahun_rilis" value="{{ row[3] }}" required><br>
+        <label>Genre:</label><br>
+        <input type="text" name="genre" value="{{ row[4] }}" required><br>
+        <button type="submit">Update</button>
+    </form>
+    <a href="{{ url_for('gui') }}">Kembali</a>
+</body>
+</html>
